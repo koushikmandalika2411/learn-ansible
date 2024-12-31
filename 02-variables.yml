@@ -1,9 +1,8 @@
-- name: Variables
-  hosts: localhost
-  connection: local
+- name: Example Playbook
+  hosts: all
+  vars:
+    example_var: "Hello, World!"
   tasks:
     - name: Print Variable
-      vars:
-        URL: task.google.com
-        ansible.builtin.debug:
-          msg: Var URL - {{ URL }}
+      debug:
+        msg: "{{ example_var }}"

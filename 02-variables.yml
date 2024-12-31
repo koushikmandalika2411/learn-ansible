@@ -1,5 +1,5 @@
 - name: Example Playbook
-  hosts: all
+  hosts: localhost
   vars:
     example_var: "Hello, World!"
   tasks:

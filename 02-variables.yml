@@ -2,7 +2,7 @@
   hosts: localhost
   connection: local
   tasks:
-    - name: Print a variable
+    - name: Print Variable
       vars:
         URL: task.google.com
         ansible.builtin.debug:

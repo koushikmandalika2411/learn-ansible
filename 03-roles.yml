@@ -1,0 +1,5 @@
+- name: Example Playbook
+  hosts: localhost
+  connection: local
+  roles:
+    - sample

@@ -1,0 +1,7 @@
+- name: Print Variable
+  debug:
+    msg: "{{ example_var }}"
+
+- name: Print URL Global
+  ansible.builtin.debug:
+    msg: Print URL - {{ URL }}

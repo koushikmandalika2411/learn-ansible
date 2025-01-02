@@ -18,3 +18,30 @@
     - name: Print URL Global
       ansible.builtin.debug:
         msg: Print URL - {{ URL }}
+
+  ## KEY: VAL, Line 12 no quotes needed
+  # KEY: {{ VAR }}, then ansible expects it to be in double quotes., Line 17 - quotes needed
+
+
+  # Variable Precedence - If same variable name is declared in multiple, which one will be picked by ANsible.
+  # 1. Command line variable.
+  # 2. Task variable
+  # 3. Play level variable from file
+  # 4. Play level Variable
+  # 5. Role vars variable
+  # 6. Inventory variables
+  # 7. Role default variable
+
+  # VAR: NAME
+  # Variable can have a-z, A-Z, 0-9, _, -
+
+  # VAR - TYPE
+  # Three Types
+  # Plain Variable - num: 10
+  # List Variable - num: [01,20]
+  # Map Variable - nums: {a:10, b:20}
+
+  # VAR - DATA TYPES
+  # String
+  # Number
+  # Boolean - True, False, Yes, No ( First letter can be capital or small)
